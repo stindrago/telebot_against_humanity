@@ -1,9 +1,9 @@
 (defproject telebot_against_humanity "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
-  :url "http://example.com/FIXME"
+  :description "A bot that replicates the game Cards against Humanity (https://www.cardsagainsthumanity.com)"
+  :url "https://gitlab.com/aredots/telebot_against_humanity"
 
-  :license {:name "Eclipse Public License"
-            :url "http://www.eclipse.org/legal/epl-v10.html"}
+  :license {:name "The GNU General Public License v3.0"
+            :url "https://www.gnu.org/licenses/gpl-3.0.en.html"}
 
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [environ             "1.1.0"]

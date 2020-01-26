@@ -8,15 +8,16 @@
   (:gen-class))
 
 ; TODO: fill correct token
-(def token (env :telegram-token))
+;(def token (env :telegram-token))
 
+(def token "1035458446:AAEjm1g5RR9bDyrUyTD6rNB9CeKE9vQk35g")
 
 (h/defhandler handler
 
   (h/command-fn "start"
     (fn [{{id :id :as chat} :chat}]
       (println "Bot joined new chat: " chat)
-      (t/send-text token id "Welcome to telebot_against_humanity!")))
+      (t/send-text token id "Welcome to Telebot Against Humanity!")))
 
   (h/command-fn "help"
     (fn [{{id :id :as chat} :chat}]
@@ -26,7 +27,7 @@
   (h/message-fn
     (fn [{{id :id} :chat :as message}]
       (println "Intercepted message: " message)
-      (t/send-text token id "I don't do a whole lot ... yet."))))
+      (t/send-text token id "I don't do a whole lot ... yet. By the end of the semester I  will be operational!"))))
 
 
 (defn -main
